@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Modul5-canvas.html</title>
+</head>
+<body>
+    <h1>Menampilkan Canvas</h1><br>
+    <canvas id="CanvasKu" height="500" width="500">
+    <!--Definisi ukuran canvas  -->
+    </canvas>
+    <script>
+        var canvas=document.getElementById('CanvasKu');
+        var ctx=canvas.getContext('2d');
+        ctx.fillStyle='#FF0000'; // Membuat Warna Gambar
+        ctx.fillRect(50,0,100,300); // Posisi dan Ukuran Gambar
+    </script>
+</body>
+</html>
