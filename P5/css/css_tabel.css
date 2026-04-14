@@ -1,0 +1,15 @@
+table{
+    width: 100%;
+    border: 1px solid green;
+}
+td{
+    border: 1px solid blue;
+    padding: 10px;
+    height: 30px;
+    vertical-align: bottom;
+}
+th{
+    height: 50px;
+    background-color: lightblue;
+    color: white;
+}
