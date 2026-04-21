@@ -1,0 +1,24 @@
+body {
+    background-color: chartreuse;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+legend {
+    color: pink;
+    font-size: xx-large;
+}
+
+#garis {
+    color: aqua;
+    background-color: blue;
+}
+
+.garis {
+    padding: 10rem;
+}

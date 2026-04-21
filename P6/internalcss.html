@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Internal</title>
+    <style>
+        body {
+            background-color: chartreuse;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        legend {
+            color: pink;
+            font-size: x-small;
+        }
+        #garis {
+            color: aqua;
+            background-color: blue;
+        }
+        .garis {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset id="garis" class="garis">
+        <legend>Selamat Datang</legend>
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" placeholder="Password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+
+</html>

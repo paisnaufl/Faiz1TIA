@@ -1,0 +1,54 @@
+body {
+    background-color: pink;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#judul {
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 3rem;
+}
+
+.card {
+    margin: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid pink;
+}
+
+.card img {
+    width: 300;
+    height: 400;
+    border-radius: 100rem;
+}
+
+
+.ketua {
+    border: solid rgb(245, 105, 191);
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+button:hover {
+    background-color: pink;
+    color: white;
+    transition-duration: 0.2s;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menentukan panas atau dingin</title>
+    <script>
+        var temp = 0;
+        var tempBatas=22;
+        temp = Math.floor(Math.random()*36);
+        if(temp<tempBatas){
+            if(temp<18){
+                alert("Suhu sekarang = "+temp+" Pakailah Jaket");
+                alert("Lebih hangatkan?");
+            }else{
+                alert("Suhu sekarang = "+temp+" Pakailah Sweater");
+                alert("Lebih hangatkan?");
+            }
+        }else{
+            if(temp<27){
+                alert("Suhu sekarang = "+temp+" Pakai Baju Normal");
+            }else{
+                alert("Suhu sekarang = "+temp+" Pakai Baju Tipis");
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Panas Atau Dingin</h1>
+        <h2>Tekan refresh untuk mengulang</h2>
+        <hr>
+    </center>
+</body>
+</html>
