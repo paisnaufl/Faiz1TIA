@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAV -->
+    <div class="navbar">
+        <nav>
+            <p>KodingSlay</p>
+            
+        </nav>
+    </div>
+
+    <!-- CON 1 -->
+    <div class="con-level">
+        <h1>LEVEL UP SKILL KAMU</h1>
+        <p>Belajar slicing santai bareng sepuh web developer. Gak pake overthinking!</p>
+    </div>
+
+    <!-- CON 2 -->
+    <h1>Mentor Sepuh</h1>
+    <div class="con-card">
+        <div class="card eren">
+            <img src="./img/eren.JPG" alt="Foto Ketua">
+            <h2>Kak Eren</h2>
+            <p>Expert Tatakae</p>
+        </div>
+        <div class="card obito">
+            <img src="./img/obito.jpeg" alt="Foto Ketua">
+            <h2>Bang Obito</h2>
+            <p>Expert Genjutsu UI</p>
+        </div>
+        <div class="card imu">
+            <img src="./img/imu.jpeg" alt="Foto Ketua">
+            <h2>Lord Imu</h2>
+            <p>Database Master</p>
+        </div>
+    </div>
+
+    <!-- CON 3 -->
+    <div class="con-media">
+        <div class="podcast">
+            <h2>Podcast & Teaser</h2>
+            <audio src="./img/horse.mp3" controls></audio>
+            <video src="./img/mov_bbb.mp4" controls></video>
+        </div>
+        <div class="jadwal">
+            <h2>Jadwal Kelas</h2>
+            <table border="2">
+                <tr style="background-color: #93c5fd;">
+                    <th>HARI</th>
+                    <th>MATERI</th>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td style="background-color: #93c5fd;">HTML Dasar & Form</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td style="background-color: #86efac;">CSS Neo-Brutalism</td>
+                </tr>
+                <tr>
+                    <td>Sabtu</td>
+                    <td style="background-color: darkturquoise;">JavaScript Alert</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- CON 4 -->
+     <div class="con-daftar">
+        <h2>FORM PENDAFTRAN SUPER KOMPLIT</h2>
+        <div class="form">
+            <form action="">
+                <div class="input-cols atas">
+                    <tr>
+                        <th>Nama Lengkap:</th>
+                        <th>Email Aktif:</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Cth: Si Paling Koding"></td>
+                        <td><input type="email" placeholder="user@koding.com"></td>
+                    </tr>
+                </div>
+                <div class="input-cols tengah">
+                    <tr>
+                        <th>Password:</th>
+                        <th>Umur:</th>
+                    </tr>
+                    <tr>
+                        <td><input type="password" placeholder="Masukkan password"></td>
+                        <td><input type="number" placeholder="Umur kamu"></td>
+                    </tr>
+                </div>
+                <div class="input-cols bawah">
+                    <tr>
+                        <th>Tanggal Lahir:</th>
+                        <th>Pilih Role:</th>
+                    </tr>
+                    <tr>
+                        <td><input type="date" placeholder="dd/mm/yyyy"></td>
+                        <td><select name="daerah" size="1">
+                                <option>Fronend Developer
+                                <option>Backend Developer
+                            </select>
+                        </td>
+                    </tr>
+                </div>
+                <!-- <Label>Nama Lengkap:</Label><input type="text" placeholder="Cth: Si Paling Koding">
+                <Label>Password:</Label><input type="password" placeholder="Masukkan password">
+                <Label>Tanggal Lahir:</Label><input type="date" placeholder="dd/mm/yyyy">
+                <Label>Email Aktif:</Label><input type="email" placeholder="user@koding.com">
+                <Label>Umur:</Label><input type="text" placeholder="Umur kamu"> -->
+
+                <!-- <label>Pilih Role:</label><select name="daerah" size="1">
+                    <option>Fronend Developer
+                    <option>Backend Developer
+                </select> -->
+                
+                <label>Jenis Kelamin:</label><br><input type="radio" value="lk">Laku-laki<input type="radio" value="pr">Perempuan <br>
+
+                <label>Skill yang ingin dipelajari:</label><br><input type="checkbox">HTML & CSS <input type="checkbox">JavaScript Dasar <input type="checkbox">UI/UX Design <br>
+
+                <label>Warna Favorit</label><br><input type="color"> <br>
+
+                <label>Tingkat Semangat (1-100):</label><br><input type="range" min="1" max="100"> <br>
+
+                <label>Upload Buktu Mahasiswa (File)</label><br><input type="file"> <br>
+
+                <button type="submit" class="kirim" onclick="alert('Yeayyyy, kuisnya selesai')">
+                    GAS DAFTAR SEKARANG!
+                </button>
+                <br>
+                <button type="reset" class="reset">
+                    RESET FORM
+                </button>
+            </form>
+        </div>
+     </div>
+
+     <!-- FOOTER -->
+      <div class="foot">
+        <p>&copy; 2026 KodingSlay Team - Web Dev Dasar Semester 2</p>
+      </div>
+</body>
+</html>
