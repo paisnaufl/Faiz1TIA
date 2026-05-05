@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="judul">Judul Awal</h2>
+    <button id="btn">Ubah Judul</button>
+
+
+    <script>
+        const btn = document.getElementById("btn");
+        const judul = document.getElementById("judul");
+        btn.addEventListener("click",
+        function (){
+            judul.innerHTML = "Sauqi Ayam";
+        }
+        );
+        // function update(){
+            
+        //     document.getElementById("judul").innerText = "Judul Baru";
+        // }
+    </script>
+</body>
+</html>

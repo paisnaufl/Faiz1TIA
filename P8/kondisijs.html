@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="cekNilai()">Show</button>
+    <p id="hasil"></p>
+
+
+
+
+
+
+
+
+
+    <script>
+        function cekNilai(){
+            let nilai = 50;
+            let status;
+            
+            if(nilai > 70) {
+                status = "Lulus";
+            }else {
+                status = "Tidak Lulus";
+            }
+            document.getElementById("hasil").innerHTML = 
+            "Nilai = "+nilai+"<br>"+
+            "Status = "+status;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=count()>Count</button>
+    <p id="result"></p>
+    <p id="resultString"></p>
+
+    <script>
+        function count(){
+            let a = 10;
+            let b = 8;
+            let string = "sauqi jelek lelek";
+
+            let tambah = a + b;
+            let kurang = a - b;
+            let kali = a * b;
+            let bagi = a / b;
+
+            // menampilkan output
+            document.getElementById("result").innerHTML = 
+            "Tambah = "+tambah+"<br>"+
+            "Kurang = "+kurang+"<br>"+
+            "Kali = "+kali+"<br>"+
+            "Bagi = "+bagi+"<br>";
+            
+            document.getElementById("resultString").innerHTML = string;
+        }
+
+    </script>
+</body>
+</html>
