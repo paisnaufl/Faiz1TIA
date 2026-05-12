@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">TI A</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-items">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <h1>Hello, world!</h1>
+    <div class="container bg-warning">
+        INI ADALAH CONTAINER BIASA. ADA SISA KOSONG DI KANAN DAN KIRI
+        <img src="obs-poster.jpg" class="img-fluid" alt="">
+    </div><br>
+
+    <div class="container-fluid bg-success">
+        INI ADALAH CONTAINER FLUID. FULL LAYAR KIRI KANAN
+        <div class="h1">INI H1</div>
+        <div class="h2">INI H2</div>
+        <div class="h3">INI H3</div>
+    </div><br>
+
+    <div class="container">
+        <div class="mb-3 row">
+            <div class="col-6 bg-secondary">KIRI</div>
+            <div class="col-6 bg-danger">KANAN</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table border table-striped-columns table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>NO</th>
+                    <th>NIM</th>
+                    <th>NAMA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2555301025</td>
+                    <td>Arip Wahyudi</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2555301025</td>
+                    <td>Arip Wahyudi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <label for="">Nama</label>
+        <input type="text" name="nama" placeholder="nama"><br>
+        <div class="mb-3 row">
+            <div class="col-6">
+                <label class="form-label">Nama </label>
+                <input type="text" class="form-control" placeholder="Nama">
+            </div>
+            <div class="col-6">
+                <label class="form-label">Nama </label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="col-12">
+                <label for="form-label">Pilih Dong Bro</label>
+                <select class="form-select" id=""></select>
+            </div>
+        </div>
+        <button type="button" class="btn bg-success">Kirim</button>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row mb-3">
+            <div class="col-4">Pertama
+                <div class="card" style="width: 18rem;">
+                    <img src="obs-poster.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">Kedua
+                <div class="card" style="width: 18rem;">
+                    <img src="obs-poster.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">Ketiga
+                <div class="card" style="width: 18rem;">
+                    <img src="obs-poster.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="alert alert-warning" role="alert">
+            <strong>Hati-hati </strong>Nanti Akun Kamu Kena Hack
+        </div>
+        <div class="alert alert-success" role="alert">
+            <strong>Berhasil </strong>Akun Kamu Aman
+        </div>
+        <div class="alert alert-danger" role="alert">
+            <strong>Mampus </strong>Akun Kamu Kena Hack
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Ingin melakukan perubahan?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-primary">Simpan Perubahan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
