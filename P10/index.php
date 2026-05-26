@@ -22,7 +22,10 @@ switch($aksi){
     case 'hapus':
         $controller->hapus();
         break;
-        default:
+    case 'frontend':
+        $controller->frontend();
+        break;
+    default:
         $controller->index();   
         break;
 }

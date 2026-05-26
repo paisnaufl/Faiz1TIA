@@ -66,5 +66,9 @@ class BeritaController{
         $this->model->delete($id);
         header('Location:index.php');
     }
-
+    
+    public function frontend(){
+        $berita = $this->model->getAll();
+        include 'app/views/frontend/depan.php';
+    }
 }
