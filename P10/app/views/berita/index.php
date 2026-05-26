@@ -109,7 +109,7 @@
                                     <?php
                                     $no = 1;
                                     while ($row = mysqli_fetch_assoc($data)) {
-                                        ?>
+                                    ?>
                                         <tr>
                                             <td><?= $no++; ?></td>
                                             <td><?= $row['judul']; ?></td>
@@ -120,8 +120,33 @@
                                             </td>
                                             <td><?= $row['tanggal']; ?></td>
                                             <td><a href="?aksi=edit&id=<?= $row['id']; ?>" class="btn btn-warning btn-sm">
-                                                <i class="bi bi-pencil-square"></i>
-                                            </a></td>
+                                                    <i class="bi bi-pencil-square"></i>
+                                                </a>
+
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Konfirmasi</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Yakin ingin menghapus berita?
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                                                                <a href="?aksi=hapus&id=<?php echo $row['id']; ?>">
+                                                                    <button type="button" class="btn btn-primary">Hapus</button>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
@@ -144,8 +169,8 @@
         </div>
     </div>
 
-    <script src="/p10/public/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/p10/public/assets/js/main.js"></script>
+    <script src="/Faiz1TIA/p10/public/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/Faiz1TIA/p10/public/assets/js/main.js"></script>
 </body>
 
 </html>

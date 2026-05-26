@@ -26,4 +26,9 @@ class BeritaModel{
 
         return mysqli_query($this->conn,$query);
     }
+
+    public function delete($id){
+        $query = "DELETE FROM berita WHERE id='$id'";
+        return mysqli_query($this->conn, $query);
+    }
 }

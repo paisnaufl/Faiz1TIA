@@ -53,4 +53,18 @@ class BeritaController{
         $this->model->update($id, $judul, $deskripsi, $tanggal, $foto);
         header('Location:index.php');
     }
+
+    public function hapus(){
+        $id = $_GET['id'];
+        $data = $this->model->getById($id);
+        if ($data && $data['foto'] != ''){
+            $path_foto = 'public/uploads/' . $data['foto'];
+            if (file_exists($path_foto)){
+                unlink($path_foto);
+            }
+        }
+        $this->model->delete($id);
+        header('Location:index.php');
+    }
+
 }

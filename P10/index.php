@@ -7,10 +7,6 @@ $controller = new BeritaController($conn);
 $aksi = isset($_GET['aksi']) ? $_GET['aksi'] : 'index';
 
 switch($aksi){
-    default:
-        $controller->index();   
-        break;
-
     case 'tambah':
         $controller->tambah();
         break;
@@ -22,5 +18,11 @@ switch($aksi){
         break;
     case 'update':
         $controller->update();
+        break;
+    case 'hapus':
+        $controller->hapus();
+        break;
+        default:
+        $controller->index();   
         break;
 }
