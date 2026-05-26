@@ -78,54 +78,44 @@
                             <span class="page-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                             <div>
                                 <p class="eyebrow mb-1">Data</p>
-                                <h1 class="h3 mb-1">Berita</h1>
+                                <h1 class="h3 mb-1">Tambah Berita</h1>
                             </div>
                         </div>
 
                     </div>
-
                     <section class="panel">
-                        <div class="panel-header">
-                            <div>
-                                <h2 class="h5 mb-1 section-title"><i class="bi bi-table"
-                                        aria-hidden="true"></i><span>Table Berita</span></h2>
-                            </div><input class="form-control form-control-sm table-search" type="search"
-                                placeholder="Search orders" data-table-search="ordersTable" aria-label="Search orders">
-                            <a href="/Faiz1TIA/p10/app/views/berita/tambah.php" class="btn btn-primary">Tambah</a>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="table align-middle mb-0" id="ordersTable" data-searchable-table>
-                                <thead>
-                                    <tr>
-                                        <th>No</th>
-                                        <th>Judul</th>
-                                        <th>Deskripsi</th>
-                                        <th>Foto</th>
-                                        <th>Tanggal</th>
-                                        <th>Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    $no = 1;
-                                    while ($row = mysqli_fetch_assoc($data)) {
-                                        ?>
-                                        <tr>
-                                            <td><?= $no++; ?></td>
-                                            <td><?= $row['judul']; ?></td>
-                                            <td><?= $row['deskripsi']; ?></td>
-
-                                            <td>
-                                                <img src="/Faiz1TIA/P10/public/uploads/<?= $row['foto']; ?>" width="100" alt="Foto Berita">
-                                            </td>
-                                            <td><?= $row['tanggal']; ?></td>
-                                            <td><a href="?aksi=edit&id=<?= $row['id']; ?>" class="btn btn-warning btn-sm">
-                                                <i class="bi bi-pencil-square"></i>
-                                            </a></td>
-                                        </tr>
-                                    <?php } ?>
-                                </tbody>
-                            </table>
+                        <div class="panel-body p-4">
+                            <form action="/Faiz1TIA/P10/index.php?aksi=update" method="POST" enctype="multipart/form-data">
+                                <input type="hidden" name="id" value="<?=$berita['id'];?>">
+                                <div class="mb-3">
+                                    <label class="form-label">Judul</label>
+                                    <input type="text" name="judul" class="form-control" value="<?=$berita['judul'];?>" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Deskripsi</label>
+                                    <input type="text" name="deskripsi" class="form-control" value="<?=$berita['deskripsi'];?>" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Foto Lama</label>
+                                    <img src="/Faiz1TIA/p10/public/uploads/<?=$berita['foto'];?>" width="150" class="img-thumnail">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Ganti Foto</label>
+                                    <input type="file" name="foto" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Tanggal</label>
+                                    <input type="date" name="tanggal" class="form-control" value="<?= $berita['tanggal'];?>" required>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-save">Update</i>
+                                    </button>
+                                    <a href="/Faiz1TIA/P10/index.php?aksi=index">
+                                        <i class="bi bi-arrow-left">Kembali</i>
+                                    </a>
+                                </div>
+                            </form>
                         </div>
                     </section>
                 </div>

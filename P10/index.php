@@ -17,4 +17,10 @@ switch($aksi){
     case 'simpan':
         $controller->simpan();
         break;
+    case 'edit':
+        $controller->edit();
+        break;
+    case 'update':
+        $controller->update();
+        break;
 }

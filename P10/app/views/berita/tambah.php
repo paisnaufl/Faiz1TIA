@@ -109,7 +109,7 @@
                             <button type="submit" name="simpan" class="btn btn-primary">
                                 <i class="bi bi-save"></i>Simpan
                             </button>
-                            <a href="/Faiz1TIA/P10/" class="btn btn-secondary">
+                            <a href="/Faiz1TIA/P10/index.php?aksi=index" class="btn btn-secondary">
                                 <i class="bi bi-arrow-left"></i> Kembali
                             </a>
                         </div>
