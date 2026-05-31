@@ -28,7 +28,7 @@
                         <img src="public/uploads/<?=$row['foto'];?>" alt="<?= $row['judul']; ?>" class="card-img-top" style="height:200px; object-fit:cover">
                         <div class="card-body">
                             <small class="text-muted d-block mb-2">
-                                <i class="bi bi-calendar3"></i><?= date('d M Y', strtotime($row['tanggal'])); ?>
+                                <i class="bi bi-calendar3"> </i><?= date('d M Y', strtotime($row['tanggal'])); ?>
                             </small>
                             <h5 class="card-title fw-bold"><?=$row['judul'];?></h5>
                             <p class="card-text text-secondary">
@@ -36,7 +36,7 @@
                             </p>
                         </div>
                         <div class="card-footer bg-white border-0 pb-3">
-                            <a href="#" class="btn btn-outline-primary w-100">Baca Selengkapnya</a>
+                            <a href="?aksi=detail&id=<?= $row['id']; ?>" class="btn btn-outline-primary w-100">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>

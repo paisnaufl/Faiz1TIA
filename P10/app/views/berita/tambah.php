@@ -100,7 +100,7 @@
                         <div class="mb-3"> 
                             <label class="form-label">Kategori</label> 
                             <select name="kategori" class="form-control" required>
-                                <option value="">-- Pilih Kategori --</option>
+                                <option value="">Pilih Kategori</option>
                                 <option value="Teknologi">Teknologi</option>
                                 <option value="Olahraga">Olahraga</option>
                                 <option value="Pendidikan">Pendidikan</option>

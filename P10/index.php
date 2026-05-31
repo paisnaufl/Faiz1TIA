@@ -25,6 +25,9 @@ switch($aksi){
     case 'frontend':
         $controller->frontend();
         break;
+    case 'detail':
+        $controller->detail();
+        break;
     default:
         $controller->index();   
         break;

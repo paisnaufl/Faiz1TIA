@@ -73,4 +73,10 @@ class BeritaController{
         $berita = $this->model->getAll();
         include 'app/views/frontend/depan.php';
     }
+
+    public function detail(){
+        $id = $_GET['id'];
+        $berita = $this->model->getById($id);
+        include 'app/views/frontend/detail.php';
+    }
 }
