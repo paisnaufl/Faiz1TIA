@@ -100,6 +100,7 @@
                                         <th>No</th>
                                         <th>Judul</th>
                                         <th>Deskripsi</th>
+                                        <th>Kategori</th>
                                         <th>Foto</th>
                                         <th>Tanggal</th>
                                         <th>Aksi</th>
@@ -114,7 +115,7 @@
                                             <td><?= $no++; ?></td>
                                             <td><?= $row['judul']; ?></td>
                                             <td><?= $row['deskripsi']; ?></td>
-
+                                            <td><?= $row['kategori']; ?></td>
                                             <td>
                                                 <img src="/Faiz1TIA/P10/public/uploads/<?= $row['foto']; ?>" width="100" alt="Foto Berita">
                                             </td>

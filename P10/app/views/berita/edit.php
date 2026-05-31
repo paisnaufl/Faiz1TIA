@@ -78,7 +78,7 @@
                             <span class="page-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                             <div>
                                 <p class="eyebrow mb-1">Data</p>
-                                <h1 class="h3 mb-1">Tambah Berita</h1>
+                                <h1 class="h3 mb-1">Edit</h1>
                             </div>
                         </div>
 
@@ -94,6 +94,15 @@
                                 <div class="mb-3">
                                     <label class="form-label">Deskripsi</label>
                                     <input type="text" name="deskripsi" class="form-control" value="<?=$berita['deskripsi'];?>" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Kategori</label>
+                                    <select name="kategori" class="form-control" required>
+                                        <option value="Teknologi" <?= ($berita['kategori'] == 'Teknologi') ? 'selected' : ''; ?>>Teknologi</option>
+                                        <option value="Olahraga" <?= ($berita['kategori'] == 'Olahraga') ? 'selected' : ''; ?>>Olahraga</option>
+                                        <option value="Pendidikan" <?= ($berita['kategori'] == 'Pendidikan') ? 'selected' : ''; ?>>Pendidikan</option>
+                                        <option value="Politik" <?= ($berita['kategori'] == 'Politik') ? 'selected' : ''; ?>>Politik</option>
+                                    </select>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Foto Lama</label>

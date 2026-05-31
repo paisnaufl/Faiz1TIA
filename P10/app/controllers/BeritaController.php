@@ -20,13 +20,14 @@ class BeritaController{
     public function simpan(){
         $judul = $_POST['judul'];
         $deskripsi = $_POST['deskripsi'];
+        $kategori = $_POST['kategori'];
         $tanggal = $_POST['tanggal'];
         $foto = $_FILES['foto']['name'];
         $tmp = $_FILES['foto']['tmp_name'];
 
         move_uploaded_file($tmp, 'public/uploads/' . $foto);
 
-        $this->model->insert($judul, $deskripsi, $tanggal, $foto);
+        $this->model->insert($judul, $deskripsi, $kategori, $tanggal, $foto);
         header("Location:/Faiz1TIA/p10/index.php");
     }
 
@@ -40,6 +41,7 @@ class BeritaController{
         $id = $_POST['id'];
         $judul = $_POST['judul'];
         $deskripsi = $_POST['deskripsi'];
+        $kategori = $_POST['kategori'];
         $tanggal = $_POST['tanggal'];
         $foto = $_FILES['foto']['name'];
         $tmp = $_FILES['foto']['tmp_name'];
@@ -50,7 +52,7 @@ class BeritaController{
             $data = $this->model->getById($id);
             $foto = $data['foto'];
         }
-        $this->model->update($id, $judul, $deskripsi, $tanggal, $foto);
+        $this->model->update($id, $judul, $deskripsi, $kategori, $tanggal, $foto);
         header('Location:index.php');
     }
 

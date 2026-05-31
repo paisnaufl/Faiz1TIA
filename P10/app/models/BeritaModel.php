@@ -10,8 +10,8 @@ class BeritaModel{
         $query = mysqli_query($this->conn, "SELECT * FROM berita ORDER BY id DESC");
         return $query;
     }
-    public function insert($judul, $deskripsi, $tanggal, $foto){
-        $query = mysqli_query($this->conn, "INSERT INTO berita (judul, deskripsi, tanggal, foto) VALUES ('$judul', '$deskripsi', '$tanggal', '$foto')");
+    public function insert($judul, $deskripsi, $kategori, $tanggal, $foto){
+        $query = mysqli_query($this->conn, "INSERT INTO berita (judul, deskripsi, kategori, tanggal, foto) VALUES ('$judul', '$deskripsi', '$kategori', '$tanggal', '$foto')");
         return $query;
     }
 
@@ -20,8 +20,8 @@ class BeritaModel{
         return mysqli_fetch_assoc($query);
     }
 
-    public function update($id, $judul, $deskripsi, $tanggal, $foto){
-        $query = "UPDATE berita SET judul = '$judul', deskripsi = '$deskripsi', tanggal = '$tanggal',   foto = '$foto'
+    public function update($id, $judul, $deskripsi, $kategori, $tanggal, $foto){
+        $query = "UPDATE berita SET judul = '$judul', deskripsi = '$deskripsi', kategori = '$kategori', tanggal = '$tanggal',   foto = '$foto'
                     WHERE id = '$id'";
 
         return mysqli_query($this->conn,$query);

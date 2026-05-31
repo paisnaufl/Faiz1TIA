@@ -97,6 +97,16 @@
                             <textarea name="deskripsi" class="form-control" rows="5"
                                 placeholder="Masukkan deskripsi berita" required></textarea>
                         </div>
+                        <div class="mb-3"> 
+                            <label class="form-label">Kategori</label> 
+                            <select name="kategori" class="form-control" required>
+                                <option value="">-- Pilih Kategori --</option>
+                                <option value="Teknologi">Teknologi</option>
+                                <option value="Olahraga">Olahraga</option>
+                                <option value="Pendidikan">Pendidikan</option>
+                                <option value="Politik">Politik</option>
+                            </select>
+                        </div>
                         <div class="mb-3">
                             <label class="form-label">Foto</label>
                             <input type="file" name="foto" class="form-control">

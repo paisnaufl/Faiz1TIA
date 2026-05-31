@@ -2,8 +2,8 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$bd = "bpw_faiz";
+$bd = "bpw";
 
-$conn = mysqli_connect($host, $user, $pass, $bd);
+$conn = mysqli_connect($host, $user, $pass, $bd, 3307);
 
 ?>
