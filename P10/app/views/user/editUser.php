@@ -28,7 +28,7 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a class="nav-link" href="index.php" aria-current="page">
+                <a class="nav-link" href="tables.html" aria-current="page">
                     <span class="nav-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                     <span class="nav-text">Berita</span>
                 </a>
@@ -82,76 +82,40 @@
                             <span class="page-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                             <div>
                                 <p class="eyebrow mb-1">Data</p>
-                                <h1 class="h3 mb-1">Berita</h1>
+                                <h1 class="h3 mb-1">Edit</h1>
                             </div>
                         </div>
 
                     </div>
-
                     <section class="panel">
-                        <div class="panel-header">
-                            <div>
-                                <h2 class="h5 mb-1 section-title"><i class="bi bi-table"
-                                        aria-hidden="true"></i><span>Table Berita</span></h2>
-                            </div><input class="form-control form-control-sm table-search" type="search"
-                                placeholder="Search orders" data-table-search="ordersTable" aria-label="Search orders">
-                            <a href="/Faiz1TIA/p10/app/views/berita/tambahuser.php" class="btn btn-primary">Tambah</a>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="table align-middle mb-0" id="ordersTable" data-searchable-table>
-                                <thead>
-                                    <tr>
-                                        <th>No</th>
-                                        <th>Email</th>
-                                        <th>Nama Lengkap</th>
-                                        <th>Jabatan</th>
-                                        <th>Password</th>
-                                        <th>Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    $no = 1;
-                                    while ($row = mysqli_fetch_assoc($user)) {
-                                    ?>
-                                        <tr>
-                                            <td><?= $no++; ?></td>
-                                            <td><?= $row['email']; ?></td>
-                                            <td><?= $row['nama_lengkap']; ?></td>
-                                            <td><?= $row['jabatan']; ?></td>
-                                            <td><?= $row['password']; ?></td>
-                                            <td><a href="?aksi=editUser&id_user=<?= $row['id_user']; ?>" class="btn btn-warning btn-sm">
-                                                    <i class="bi bi-pencil-square"></i>
-                                                </a>
-
-                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                    <i class="bi bi-trash"></i>
-                                                </button>
-
-                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Konfirmasi</h1>
-                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                Yakin ingin menghapus user?
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
-                                                                <a href="?aksi=hapusUser&id_user=<?php echo $row['id_user']; ?>">
-                                                                    <button type="button" class="btn btn-primary">Hapus</button>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    <?php } ?>
-                                </tbody>
-                            </table>
+                        <div class="panel-body p-4">
+                            <form action="/Faiz1TIA/P10/index.php?aksi=updateUser" method="POST" enctype="multipart/form-data">
+                                <input type="hidden" name="id_user" value="<?=$user['id_user'];?>">
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="text" name="email" class="form-control" value="<?=$user['email'];?>" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Nama Lengkap</label>
+                                    <input type="text" name="nama_lengkap" class="form-control" value="<?=$user['nama_lengkap'];?>" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Jabatan</label>
+                                    <input type="text" name="jabatan" class="form-control" value="<?= $user['jabatan'];?>" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input type="text" name="password" class="form-control" value="<?= $user['password'];?>" required>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-save">Update</i>
+                                    </button>
+                                    <a href="/Faiz1TIA/P10/index.php?aksi=user">
+                                        <i class="bi bi-arrow-left">Kembali</i>
+                                    </a>
+                                </div>
+                            </form>
                         </div>
                     </section>
                 </div>
@@ -170,8 +134,8 @@
         </div>
     </div>
 
-    <script src="/Faiz1TIA/p10/public/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/Faiz1TIA/p10/public/assets/js/main.js"></script>
+    <script src="/p10/public/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/p10/public/assets/js/main.js"></script>
 </body>
 
 </html>

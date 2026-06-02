@@ -1,8 +1,10 @@
 <?php
 require_once __DIR__ . '/config/koneksi.php';
 require_once 'app/controllers/BeritaController.php';
+require_once 'app/controllers/UserController.php';
 
 $controller = new BeritaController($conn);
+$controllerUser = new UserController($conn);
 
 $aksi = isset($_GET['aksi']) ? $_GET['aksi'] : 'index';
 
@@ -29,19 +31,19 @@ switch($aksi){
         $controller->detail();
         break;
     case 'user':
-        $controller->user();
+        $controllerUser->user();
         break;
     case 'simpanUser':
-        $controller->simpanUser();
+        $controllerUser->simpanUser();
         break;
     case 'editUser':
-        $controller->editUser();
+        $controllerUser->editUser();
         break;
     case 'updateUser':
-        $controller->updateUser();
+        $controllerUser->updateUser();
         break;
     case 'hapusUser':
-        $controller->hapusUser();
+        $controllerUser->hapusUser();
         break;
     default:
         $controller->index();   

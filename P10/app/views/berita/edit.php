@@ -32,6 +32,10 @@
                     <span class="nav-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                     <span class="nav-text">Berita</span>
                 </a>
+                <a class="nav-link" href="index.php?aksi=user" aria-current="page">
+                    <span class="nav-icon"><i class="bi bi-person" aria-hidden="true"></i></span>
+                    <span class="nav-text">User</span>
+                </a>
                 <a class="nav-link" href="modals.html">
                     <span class="nav-icon"><i class="bi bi-window-stack" aria-hidden="true"></i></span>
                     <span class="nav-text">Modals</span>

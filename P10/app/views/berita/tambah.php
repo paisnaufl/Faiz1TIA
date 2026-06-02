@@ -28,9 +28,13 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a class="nav-link active" href="tables.html" aria-current="page">
+                <a class="nav-link active" href="/Faiz1TIA/P10/index.php?aksi=index" aria-current="page">
                     <span class="nav-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                     <span class="nav-text">Berita</span>
+                </a>
+                <a class="nav-link" href="/Faiz1TIA/P10/index.php?aksi=user" aria-current="page">
+                    <span class="nav-icon"><i class="bi bi-person" aria-hidden="true"></i></span>
+                    <span class="nav-text">User</span>
                 </a>
                 <a class="nav-link" href="modals.html">
                     <span class="nav-icon"><i class="bi bi-window-stack" aria-hidden="true"></i></span>
@@ -105,6 +109,7 @@
                                 <option value="Olahraga">Olahraga</option>
                                 <option value="Pendidikan">Pendidikan</option>
                                 <option value="Politik">Politik</option>
+                                <option value="Entertaiment">Entertaiment</option>
                             </select>
                         </div>
                         <div class="mb-3">

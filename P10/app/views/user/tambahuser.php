@@ -28,9 +28,13 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a class="nav-link active" href="tables.html" aria-current="page">
+                <a class="nav-link" href="/Faiz1TIA/P10/index.php?aksi=index" aria-current="page">
                     <span class="nav-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                     <span class="nav-text">Berita</span>
+                </a>
+                <a class="nav-link active" href="/Faiz1TIA/P10/index.php?aksi=user" aria-current="page">
+                    <span class="nav-icon"><i class="bi bi-person" aria-hidden="true"></i></span>
+                    <span class="nav-text">User</span>
                 </a>
                 <a class="nav-link" href="modals.html">
                     <span class="nav-icon"><i class="bi bi-window-stack" aria-hidden="true"></i></span>
@@ -111,7 +115,7 @@
                             <button type="submit" name="simpan" class="btn btn-primary">
                                 <i class="bi bi-save"></i>Simpan
                             </button>
-                            <a href="/Faiz1TIA/P10/index.php?aksi=index" class="btn btn-secondary">
+                            <a href="/Faiz1TIA/P10/index.php?aksi=user" class="btn btn-secondary">
                                 <i class="bi bi-arrow-left"></i> Kembali
                             </a>
                         </div>
