@@ -28,11 +28,11 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a class="nav-link active" href="index.php" aria-current="page">
+                <a class="nav-link" href="index.php" aria-current="page">
                     <span class="nav-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                     <span class="nav-text">Berita</span>
                 </a>
-                <a class="nav-link" href="index.php?aksi=user" aria-current="page">
+                <a class="nav-link active" href="index.php?aksi=user" aria-current="page">
                     <span class="nav-icon"><i class="bi bi-person" aria-hidden="true"></i></span>
                     <span class="nav-text">User</span>
                 </a>
@@ -95,36 +95,32 @@
                                         aria-hidden="true"></i><span>Table Berita</span></h2>
                             </div><input class="form-control form-control-sm table-search" type="search"
                                 placeholder="Search orders" data-table-search="ordersTable" aria-label="Search orders">
-                            <a href="/Faiz1TIA/p10/app/views/berita/tambah.php" class="btn btn-primary">Tambah</a>
+                            <a href="/Faiz1TIA/p10/app/views/berita/tambahuser.php" class="btn btn-primary">Tambah</a>
                         </div>
                         <div class="table-responsive">
                             <table class="table align-middle mb-0" id="ordersTable" data-searchable-table>
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Judul</th>
-                                        <th>Deskripsi</th>
-                                        <th>Kategori</th>
-                                        <th>Foto</th>
-                                        <th>Tanggal</th>
+                                        <th>Email</th>
+                                        <th>Nama Lengkap</th>
+                                        <th>Jabatan</th>
+                                        <th>Password</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
                                     $no = 1;
-                                    while ($row = mysqli_fetch_assoc($data)) {
+                                    while ($row = mysqli_fetch_assoc($user)) {
                                     ?>
                                         <tr>
                                             <td><?= $no++; ?></td>
-                                            <td><?= $row['judul']; ?></td>
-                                            <td><?= $row['deskripsi']; ?></td>
-                                            <td><?= $row['kategori']; ?></td>
-                                            <td>
-                                                <img src="/Faiz1TIA/P10/public/uploads/<?= $row['foto']; ?>" width="100" alt="Foto Berita">
-                                            </td>
-                                            <td><?= $row['tanggal']; ?></td>
-                                            <td><a href="?aksi=edit&id=<?= $row['id']; ?>" class="btn btn-warning btn-sm">
+                                            <td><?= $row['email']; ?></td>
+                                            <td><?= $row['nama_lengkap']; ?></td>
+                                            <td><?= $row['jabatan']; ?></td>
+                                            <td><?= $row['password']; ?></td>
+                                            <td><a href="?aksi=editUser&id_user=<?= $row['id_user']; ?>" class="btn btn-warning btn-sm">
                                                     <i class="bi bi-pencil-square"></i>
                                                 </a>
 
@@ -140,11 +136,11 @@
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Yakin ingin menghapus berita?
+                                                                Yakin ingin menghapus user?
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
-                                                                <a href="?aksi=hapus&id=<?php echo $row['id']; ?>">
+                                                                <a href="?aksi=hapusUser&id_user=<?php echo $row['id_user']; ?>">
                                                                     <button type="button" class="btn btn-primary">Hapus</button>
                                                                 </a>
                                                             </div>

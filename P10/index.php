@@ -28,6 +28,21 @@ switch($aksi){
     case 'detail':
         $controller->detail();
         break;
+    case 'user':
+        $controller->user();
+        break;
+    case 'simpanUser':
+        $controller->simpanUser();
+        break;
+    case 'editUser':
+        $controller->editUser();
+        break;
+    case 'updateUser':
+        $controller->updateUser();
+        break;
+    case 'hapusUser':
+        $controller->hapusUser();
+        break;
     default:
         $controller->index();   
         break;

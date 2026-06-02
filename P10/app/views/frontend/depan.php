@@ -15,7 +15,7 @@
                 <i class="bi bi-newspapaer"></i>Masalah Tempo
             </a>
             <div>
-                <a href="?aksi=index" class="btn btn-light btn-sm">Login Admin</a>
+                <a href="?aksi=login" class="btn btn-light btn-sm">Login Admin</a>
             </div>
         </div>
     </nav>
