@@ -28,11 +28,12 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a class="nav-link active" href="index.php" aria-current="page">
+                <a class="nav-link active" href="?aksi=dashboard" aria-current="page">
                     <span class="nav-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                     <span class="nav-text">Berita</span>
                 </a>
-                <a class="nav-link" href="index.php?aksi=user" aria-current="page">
+                <?php if($_SESSION['jabatan']==='admin'):?>
+                <?php endif;?><a class="nav-link" href="index.php?aksi=user" aria-current="page">
                     <span class="nav-icon"><i class="bi bi-person" aria-hidden="true"></i></span>
                     <span class="nav-text">User</span>
                 </a>
@@ -47,6 +48,10 @@
                 <a class="nav-link" href="blank.html">
                     <span class="nav-icon"><i class="bi bi-file-earmark" aria-hidden="true"></i></span>
                     <span class="nav-text">Blank Page</span>
+                </a>
+                <a class="nav-link text-danger mt-auto" href="?aksi=logout" onclick="return confirm('Yakin ingin keluar?')">
+                    <span class="nav-icon"><i class="bi bi-box-arrow-left" aria-hidden="true"></i></span>
+                    <span class="nav-text">Logout</span>
                 </a>
             </nav>
         </aside>

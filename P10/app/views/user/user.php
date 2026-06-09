@@ -28,7 +28,7 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a class="nav-link" href="index.php" aria-current="page">
+                <a class="nav-link" href="/Faiz1TIA/P10/index.php?aksi=dashboard" aria-current="page">
                     <span class="nav-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                     <span class="nav-text">Berita</span>
                 </a>
@@ -47,6 +47,10 @@
                 <a class="nav-link" href="blank.html">
                     <span class="nav-icon"><i class="bi bi-file-earmark" aria-hidden="true"></i></span>
                     <span class="nav-text">Blank Page</span>
+                </a>
+                <a class="nav-link text-danger mt-auto" href="?aksi=logout" onclick="return confirm('Yakin ingin keluar?')">
+                    <span class="nav-icon"><i class="bi bi-box-arrow-left" aria-hidden="true"></i></span>
+                    <span class="nav-text">Logout</span>
                 </a>
             </nav>
         </aside>
@@ -82,7 +86,7 @@
                             <span class="page-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                             <div>
                                 <p class="eyebrow mb-1">Data</p>
-                                <h1 class="h3 mb-1">Berita</h1>
+                                <h1 class="h3 mb-1">User</h1>
                             </div>
                         </div>
 
@@ -92,7 +96,7 @@
                         <div class="panel-header">
                             <div>
                                 <h2 class="h5 mb-1 section-title"><i class="bi bi-table"
-                                        aria-hidden="true"></i><span>Table Berita</span></h2>
+                                        aria-hidden="true"></i><span>Table User</span></h2>
                             </div><input class="form-control form-control-sm table-search" type="search"
                                 placeholder="Search orders" data-table-search="ordersTable" aria-label="Search orders">
                             <a href="/Faiz1TIA/p10/app/views/user/tambahuser.php" class="btn btn-primary">Tambah</a>

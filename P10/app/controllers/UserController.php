@@ -17,9 +17,8 @@ class UserController{
         $email = $_POST['email'];
         $nama_lengkap = $_POST['nama_lengkap'];
         $jabatan = $_POST['jabatan'];
-        $password = $_POST['password'];
-
-        $this->model->insertUser($email, $nama_lengkap, $jabatan, $password);
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $this->model->insertUser($email,$nama_lengkap,$jabatan,$password);
         header("Location:/Faiz1TIA/p10/index.php?aksi=user");
     }
 

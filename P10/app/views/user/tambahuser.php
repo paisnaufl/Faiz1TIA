@@ -28,7 +28,7 @@
             </div>
 
             <nav class="sidebar-nav">
-                <a class="nav-link" href="/Faiz1TIA/P10/index.php?aksi=index" aria-current="page">
+                <a class="nav-link" href="/Faiz1TIA/P10/index.php?aksi=dashboard" aria-current="page">
                     <span class="nav-icon"><i class="bi bi-table" aria-hidden="true"></i></span>
                     <span class="nav-text">Berita</span>
                 </a>
@@ -47,6 +47,10 @@
                 <a class="nav-link" href="blank.html">
                     <span class="nav-icon"><i class="bi bi-file-earmark" aria-hidden="true"></i></span>
                     <span class="nav-text">Blank Page</span>
+                </a>
+                <a class="nav-link text-danger mt-auto" href="?aksi=logout" onclick="return confirm('Yakin ingin keluar?')">
+                    <span class="nav-icon"><i class="bi bi-box-arrow-left" aria-hidden="true"></i></span>
+                    <span class="nav-text">Logout</span>
                 </a>
             </nav>
         </aside>
